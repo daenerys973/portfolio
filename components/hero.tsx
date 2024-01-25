@@ -19,10 +19,12 @@ const Hero = () => {
               <br />
               see how I bring your Ideas to life.
             </h1>
-            <p className=" animate-slidein700 opacity-0 text-slate-300 text-center md:text-2xl leading-7 max-w-[612px] self-center mt-7 max-md:max-w-full">
-              Meet the new standard for modern software development.
+            <p className=" animate-slidein700 opacity-0 text-slate-300 text-center md:text-xl  max-w-[612px] self-center mt-7 max-md:max-w-full">
+              Full Stack Developer specialized in MERN, with skills to create
+              efficient web applications
               <br />
-              Streamline issues, sprints, and product roadmaps.
+              Committed to technical excellence, my approach is to seamlessly
+              integrate technologies to achieve exceptional user experiences.
             </p>
             <div className="animate-slidein700 opacity-0 justify-center items-stretch bg-indigo-500 self-center flex gap-0.5 mt-12 pl-5 pr-3 py-2 rounded-xl max-md:mt-10">
               <div className="text-white text-base font-medium leading-8 grow whitespace-nowrap">

@@ -43,6 +43,7 @@ const Card = () => {
       link: "https://decodehud.com/",
     },
   ];
+  
   return (
     <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:px-20 pt-12 opacity-0 animate-slidein700">
       {data?.map((post, i) => (
