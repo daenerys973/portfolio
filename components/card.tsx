@@ -31,7 +31,7 @@ const Card = () => {
         "https://res.cloudinary.com/dolzrq2x7/image/upload/v1686257668/decodehud/Next.js_cwfcjc.svg",
       github: "/",
       start: "Start",
-      link: "https://portfolio.decodehud.com/",
+      link: "https://decodehud.com",
     },
     {
       title: "Blog",
