@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import GradientWrapper from "./GradientWrapper";
 
 const Card = () => {
   const data = [
@@ -43,17 +42,17 @@ const Card = () => {
       link: "https://decodehud.com/",
     },
   ];
-  
+
   return (
-    <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:px-20 pt-12 opacity-0 animate-slidein700">
+    <div className=" animate-slidein700 grid grid-cols-1 gap-4 pt-12 opacity-0 sm:grid-cols-2 md:grid-cols-3 md:px-20 lg:grid-cols-4">
       {data?.map((post, i) => (
-        <div key={i} className="bg-[#14171F] px-2 rounded-2xl relative">
-          <GradientWrapper/>
+        <div key={i} className="relative rounded-2xl bg-[#14171F] px-2">
+          {/* <GradientWrapper/> */}
           <div className="py-2">
             <Link href={post.github} className="text-lg text-gray-700">
               {/* <BsGithub aria-label="github" /> */}
             </Link>
-            <div className="flex justify-center items-center text-center">
+            <div className="flex items-center justify-center text-center">
               <Image
                 src={post.image}
                 alt={post.title}
@@ -65,14 +64,14 @@ const Card = () => {
           </div>
 
           <div className="py-2">
-            <h1 className="py-2 text-md text-gray-500">{post.title}</h1>
-            <p className="py-2 text-sm text-gray-600 truncate">
+            <h1 className="text-md py-2 text-gray-500">{post.title}</h1>
+            <p className="truncate py-2 text-sm text-gray-600">
               {post.description}
             </p>
           </div>
 
           <div className="py-2">
-            <div className="py-2 bg-[#282e3a] text-center text-white rounded-xl ">
+            <div className="rounded-xl bg-[#282e3a] py-2 text-center text-white ">
               <Link href={post.link} target="_blank">
                 Read more
               </Link>

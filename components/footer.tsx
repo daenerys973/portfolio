@@ -1,5 +1,4 @@
 import Link from "next/link";
-import React from "react";
 import { AiFillHeart } from "react-icons/ai";
 
 const Footer = () => {
@@ -7,12 +6,12 @@ const Footer = () => {
   var year = date.getFullYear();
   return (
     <section className="animate-fade-up">
-      <div className="text-center py-3">
+      <div className="py-3 text-center">
         <div className="flex justify-center space-x-2  pt-4 text-sm">
           <p className="text-gray-500">Made with</p>
 
           <div className="flex space-x-2">
-            <AiFillHeart aria-label="heart" className="text-red-400 text-xl" />
+            <AiFillHeart aria-label="heart" className="text-xl text-red-400" />
             <p className="text-gray-500">
               <Link href="https://nextjs.org/" target="_blank">
                 in El Salvador.

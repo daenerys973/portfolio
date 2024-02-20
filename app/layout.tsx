@@ -1,8 +1,18 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
+import { cn } from "@/lib/utils";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
+const fontSans = Inter({
+  subsets: ["latin"],
+  variable: "--font-sans",
+});
+const fontHeading = localFont({
+  src: "../fonts/webfonts/CalSans-SemiBold.woff2",
+  variable: "--font-heading",
+});
 
 export const metadata: Metadata = {
   title: "Portfolio - Decodehub",
@@ -17,8 +27,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <div className="px-2 bg-[#0D1117]">{children}</div>
+      <body
+        className={cn(
+          "min-h-screen bg-[#0D1117] font-sans",
+          fontSans.variable,
+          fontHeading.variable,
+        )}
+      >
+        <div className=" px-2">{children}</div>
       </body>
     </html>
   );
