@@ -1,7 +1,5 @@
 import React from "react";
 import GradientWrapper from "./GradientWrapper";
-import Link from "next/link";
-import Pattern from "./patthern";
 const Hero = () => {
   return (
     <main>
@@ -14,10 +12,11 @@ const Hero = () => {
               </div>
             </div>
             <GradientWrapper />
-            <div className="font-heading animate-slidein300 bg-gradient-to-r from-gray-400 to-gray-800 bg-clip-text pt-6 text-3xl text-transparent text-white sm:text-5xl md:text-6xl lg:text-7xl">
+            {/* <Pattern /> */}
+            <div className="font-heading animate-slidein300 bg-gradient-to-r from-gray-400 to-gray-800 bg-clip-text pt-6 text-4xl text-transparent text-white sm:text-5xl md:text-6xl lg:text-7xl">
               Explore my portfolio to see how I bring your ideas to life.
             </div>
-            <p className="animate-slidein300 text-muted-foreground max-w-[42rem] pt-6 text-center leading-normal text-white sm:text-xl sm:leading-8">
+            <p className="animate-slidein300 text-muted-foreground max-w-[42rem] pt-6 text-center text-sm leading-normal text-white sm:text-xl sm:leading-8">
               MERN Full Stack Developer dedicated to crafting efficient web
               applications. Committed to technical excellence, I seamlessly
               integrate technologies for exceptional user experiences.
